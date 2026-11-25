@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - FitMar Gym</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">🏋️ FitMar Gym</div>
+        <div class="user-info">
+            <span id="bienvenidaUsuario">Bienvenido, Admin</span>
+            <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="inicio.html" class="active">Inicio y Planes</a></li>
+            <li><a href="socios.html">Registro de Socios</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-container">
+        <main class="main-content">
+            <section class="stats-section">
+                <h2>Resumen del Gimnasio</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Socios Activos</h3>
+                        <p class="stat-number">148</p>
+                        <p>Membresías vigentes este mes</p>
+                    </article>
+                    <article class="card">
+                        <h3>Asistencia Hoy</h3>
+                        <p class="stat-number">64</p>
+                        <p>Ingresos registrados en recepción</p>
+                    </article>
+                    <article class="card">
+                        <h3>Clases Grupales</h3>
+                        <p class="stat-number">8</p>
+                        <p>Zumba, CrossFit, Spinning y Boxeo</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="planes-section">
+                <h2>Planes y Membresías Disponibles</h2>
+                <div class="cards-grid">
+                    <article class="card plan-card">
+                        <h3>Plan Básico</h3>
+                        <p class="price">Bs. 150 / mes</p>
+                        <ul>
+                            <li>Acceso a sala de máquinas</li>
+                            <li>Horario: 06:00 a 16:00</li>
+                            <li>Evaluación física inicial</li>
+                        </ul>
+                    </article>
+                    <article class="card plan-card destacado">
+                        <h3>Plan Full</h3>
+                        <p class="price">Bs. 220 / mes</p>
+                        <ul>
+                            <li>Acceso ilimitado todo el día</li>
+                            <li>Todas las clases grupales</li>
+                            <li>Asesoría de rutina personalizada</li>
+                        </ul>
+                    </article>
+                    <article class="card plan-card">
+                        <h3>Plan Trimestral</h3>
+                        <p class="price">Bs. 580 / 3 meses</p>
+                        <ul>
+                            <li>Acceso Full ilimitado</li>
+                            <li>1 sesión nutricional al mes</li>
+                            <li>Invitado gratis los viernes</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="aside-box">
+                <h3>Horarios de Atención</h3>
+                <p><strong>Lunes a Viernes:</strong><br>06:00 - 22:00</p>
+                <p><strong>Sábados:</strong><br>07:00 - 18:00</p>
+                <p><strong>Domingos:</strong><br>Cerrado</p>
+            </section>
+
+            <section class="aside-box">
+                <h3>Calculadora rápida de IMC</h3>
+                <form id="imcForm">
+                    <input type="number" id="peso" placeholder="Peso (kg)" step="0.1" required>
+                    <input type="number" id="altura" placeholder="Altura (cm)" required>
+                    <button type="submit" class="btn-primary">Calcular IMC</button>
+                </form>
+                <p id="resultadoIMC" class="imc-result"></p>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <p> 2026 FitMar Gym</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

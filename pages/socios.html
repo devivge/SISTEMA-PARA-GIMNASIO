@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socios - FitMar Gym</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">🏋️ FitMar Gym</div>
+        <div class="user-info">
+            <span id="bienvenidaUsuario">Bienvenido, Admin</span>
+            <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="inicio.html">Inicio y Planes</a></li>
+            <li><a href="socios.html" class="active">Registro de Socios</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-container">
+        <main class="main-content">
+            <section class="form-section">
+                <h2>Registrar Nuevo Socio</h2>
+                <form id="formSocio" class="grid-form">
+                    <input type="text" id="nombreSocio" placeholder="Nombre completo" required>
+                    <input type="text" id="ciSocio" placeholder="Cédula de Identidad" required>
+                    <select id="planSocio">
+                        <option value="Plan Básico (Bs. 150)">Plan Básico (Bs. 150)</option>
+                        <option value="Plan Full (Bs. 220)">Plan Full (Bs. 220)</option>
+                        <option value="Plan Trimestral (Bs. 580)">Plan Trimestral (Bs. 580)</option>
+                    </select>
+                    <button type="submit" class="btn-primary">Agregar Socio</button>
+                </form>
+            </section>
+
+            <section class="table-section">
+                <h2>Listado de Socios Inscritos</h2>
+                <article class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>C.I.</th>
+                                <th>Plan Contratado</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaSocios">
+                            <tr>
+                                <td>Carlos Mamani</td>
+                                <td>8451230 LP</td>
+                                <td>Plan Full (Bs. 220)</td>
+                                <td><span class="badge">Activo</span></td>
+                            </tr>
+                            <tr>
+                                <td>Valeria Quispe</td>
+                                <td>9123456 LP</td>
+                                <td>Plan Trimestral (Bs. 580)</td>
+                                <td><span class="badge">Activo</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="aside-box">
+                <h3>Avisos de Recepción</h3>
+                <p>• Verificar carnet de identidad en inscripciones nuevas.</p>
+                <p>• Recordar a los socios traer toalla personal y botella de agua.</p>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <p>2026 FitMar Gym</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
